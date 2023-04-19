@@ -13,7 +13,7 @@ contract MyContract is ERC721Base {
     )
         ERC721Base(
             _name,
-            _symbol,
+            _symbol, 
             _royaltyRecipient,
             _royaltyBps
         )
