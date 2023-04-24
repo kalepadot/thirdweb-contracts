@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "@thirdweb-dev/contracts/base/ERC721Base.sol";
 
-contract MyContract is ERC721Base {
+contract MyAwesomeNFTs is ERC721Base {
 
       constructor(
         string memory _name,
