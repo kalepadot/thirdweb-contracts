@@ -2,8 +2,9 @@
 pragma solidity ^0.8.0;
 
 import "@thirdweb-dev/contracts/base/ERC721Base.sol";
+import "@thirdweb-dev/contracts/extension/PermissionsEnumerable.sol";
 
-contract MyAwesomeNFTs is ERC721Base {
+contract MyAwesomeNFTs is ERC721Base, PermissionsEnumerable {
 
       constructor(
         string memory _name,
@@ -17,6 +18,11 @@ contract MyAwesomeNFTs is ERC721Base {
             _royaltyRecipient,
             _royaltyBps
         )
-    {}
+    {
+
+        //set up the DEFAULT ADMIN ROLE 
+        //provide that role to the wallet deployer
+        _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
+    }
 
 }
