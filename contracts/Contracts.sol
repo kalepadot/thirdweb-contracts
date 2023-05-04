@@ -6,6 +6,8 @@ import "@thirdweb-dev/contracts/extension/PermissionsEnumerable.sol";
 
 contract MyAwesomeNFTs is ERC721Base, PermissionsEnumerable {
 
+// mapping from token ID to the power level of the NFT
+
       constructor(
         string memory _name,
         string memory _symbol,
@@ -22,7 +24,7 @@ contract MyAwesomeNFTs is ERC721Base, PermissionsEnumerable {
 
         //set up the DEFAULT ADMIN ROLE 
         //provide that role to the wallet deployer
-        _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
+        // _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
     }
 
 }
