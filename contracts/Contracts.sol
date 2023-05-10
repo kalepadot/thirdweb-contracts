@@ -22,9 +22,9 @@ contract MyAwesomeNFTs is ERC721Base, PermissionsEnumerable {
         )
     {
 
-        //set up the DEFAULT ADMIN ROLE 
-        //provide that role to the wallet deployer
-        // _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
+        set up the DEFAULT ADMIN ROLE 
+        provide that role to the wallet deployer
+        _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
     }
 
 }
